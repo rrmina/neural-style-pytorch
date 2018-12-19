@@ -9,23 +9,24 @@ This implementation is inspired by the implementations of:
 
 The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/pytorch-vgg) were used for this implementation, instead of the pretrained VGG19's in PyTorch's model zoo.
 
-## Requirements
-`NOTE`: For `Google-Colab users` - All data files and dependencies can be installed by running the uppermost cell of the notebook!
+## Examples
 
-# Examples
-
-## Janelle Monae + Starry Sky by Vincent van Gogh
+### Janelle Monae + Starry Sky by Vincent van Gogh
 ![Janelle Monae](https://i.imgur.com/WWq6I1U.jpg)
 
-## Andrew Y. Ng + Oil Painting of a Girl in Rain
+### Andrew Y. Ng + Oil Painting of a Girl in Rain
 ![AndrewYNg](https://i.imgur.com/cO9YdZI.jpg)
 
-## Style Transfer of Golden Bridge
+### Style Transfer of Golden Bridge
 ![Golden Bridge](https://i.imgur.com/E6A4AmU.jpg)
+
 
 ### Data Files
 * [Pre-trained VGG19 network weights](https://s3-us-west-2.amazonaws.com/jcjohns-models/vgg16-00b39a1b.pth) - put it in `models/` directory
 * [torchvision](https://pytorch.org/) - `torchvision.models` contains the VGG19 model skeleton
+
+## Requirements
+`NOTE`: For `Google-Colab users` - All data files and dependencies can be installed by running the uppermost cell of the notebook!
 
 ### Dependecies
 * [PyTorch](https://pytorch.org/)
