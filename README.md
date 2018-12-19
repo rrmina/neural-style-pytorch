@@ -20,13 +20,12 @@ The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/py
 ### Style Transfer of Golden Bridge
 ![Golden Bridge](https://i.imgur.com/E6A4AmU.jpg)
 
+## Requirements
+`NOTE`: For `Google-Colab users` - All data files and dependencies can be installed by running the uppermost cell of the notebook!
 
 ### Data Files
 * [Pre-trained VGG19 network weights](https://s3-us-west-2.amazonaws.com/jcjohns-models/vgg16-00b39a1b.pth) - put it in `models/` directory
 * [torchvision](https://pytorch.org/) - `torchvision.models` contains the VGG19 model skeleton
-
-## Requirements
-`NOTE`: For `Google-Colab users` - All data files and dependencies can be installed by running the uppermost cell of the notebook!
 
 ### Dependecies
 * [PyTorch](https://pytorch.org/)
