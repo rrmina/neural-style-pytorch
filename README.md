@@ -1,4 +1,4 @@
-# neural-style: Neural Style in Pytorch!
+# neural-style: Neural Style in Pytorch! :art:
 
 An implementation of the neural style in PyTorch! This notebook implements [Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) by Leon Gatys, Alexander Ecker, and Matthias Bethge. 
 
@@ -20,10 +20,7 @@ The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/py
 ![AndrewYNg](https://i.imgur.com/cO9YdZI.jpg)
 
 ### Style Transfers of Golden Bridge
-![Golden Bridge](https://i.imgur.com/F4GrkJU.jpg)
-
-### Anish Athalye (author of neural-style-tf) and Starry Night
-![anish](https://i.imgur.com/MB90IvW.png)
+![dubnation](https://i.imgur.com/K2eCqjA.jpg)
 
 ### [Some Old Man](https://www.google.com/search?q=philippine+idiot&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0p_PDqK3fAhVIabwKHRWeCPQQ_AUIDigB&biw=2560&bih=1311) + Increasing Style Weights of Starry Night
 ![Philippine Idiot](https://i.imgur.com/bK8bnCN.jpg)
@@ -68,7 +65,7 @@ The included notebook file is a `Google-Colab-ready` notebook! Uncomment and run
 !wget -c https://github.com/iamRusty/neural-style-pytorch/archive/master.zip
 !unzip -q master.zip
 !mkdir images
-!cp neural-style-pytorch-master/images/1-content.jpg images
+!cp neural-style-pytorch-master/images/1-content.png images
 !cp neural-style-pytorch-master/images/1-style.jpg images
 
 # Install PyTorch and torchvision
