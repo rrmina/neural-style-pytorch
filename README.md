@@ -10,19 +10,19 @@ This implementation is inspired by the implementations of:
 The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/pytorch-vgg) were used for this implementation, instead of the pretrained VGG19's in PyTorch's model zoo.
 
 ## Examples
-### Catriona Gray + Woman I by Willem de Kooning
+### Catriona Gray and Woman I by Willem de Kooning
 ![Catriona](https://i.imgur.com/Cx7WEZo.jpg)
 
-### Janelle Monae + Starry Night by Vincent van Gogh
+### Janelle Monae and Starry Night by Vincent van Gogh
 ![Janelle Monae](https://i.imgur.com/WWq6I1U.jpg)
 
-### Andrew Y. Ng + Oil Painting of a Girl in Rain
+### Andrew Y. Ng and Oil Painting of a Girl in Rain
 ![AndrewYNg](https://i.imgur.com/cO9YdZI.jpg)
 
-### Style Transfer of Golden Bridge
+### Style Transfers of Golden Bridge
 ![Golden Bridge](https://i.imgur.com/F4GrkJU.jpg)
 
-### Anish Athalye (author of neural-style-tf) + Starry Night
+### Anish Athalye (author of neural-style-tf) and Starry Night
 ![anish](https://i.imgur.com/MB90IvW.png)
 
 ### [Some Old Man](https://www.google.com/search?q=philippine+idiot&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0p_PDqK3fAhVIabwKHRWeCPQQ_AUIDigB&biw=2560&bih=1311) + Increasing Style Weights of Starry Night
@@ -56,7 +56,7 @@ Codes are implemented inside the `neural_style.ipynb` notebook. Jupyter notebook
 jupyter notebook
 ```
 
-### For Google Colab
+### Google Colab
 The included notebook file is a `Google-Colab-ready` notebook! Uncomment and run the first cell to download the demo pictures, and VGG19 weights. It will also install the dependencies (i.e. PyTorch and torchvision).
 ```
 # Download VGG19 Model
@@ -77,7 +77,7 @@ The included notebook file is a `Google-Colab-ready` notebook! Uncomment and run
 ```
 ## Options
 ### Image
-* `MAX_IMAGE_SIZE`: sets the max dimension of height or weight. Bigger GPU memory is need to run larger `MAX_IMAGE_SIZE`. Default is `512`px.
+* `MAX_IMAGE_SIZE`: sets the max dimension of height or weight. Bigger GPU memory is needed to run larger images. Default is `512`px.
 * `INIT_IMAGE`: Sets the initial image file to either `'random'` or `'content'`. Default is `random` which initializes a noise image. Content copies a resized content image, giving free optimization of content loss!
 * `CONTENT_PATH`: path of the content image
 * `STYLE_PATH`: path of the style image
