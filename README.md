@@ -1,15 +1,15 @@
 # neural-style: Neural Style in Pytorch! :art:
 
-An implementation of the neural style in PyTorch! This notebook implements [Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) by Leon Gatys, Alexander Ecker, and Matthias Bethge. 
+An implementation of the neural style in PyTorch! This notebook implements [Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf) by Leon Gatys, Alexander Ecker, and Matthias Bethge. Color preservation/Color transfer is based on the 2nd approach of discussed in [Preserving Color in Neural Artistic Style Transfer](https://arxiv.org/pdf/1606.05897.pdf) by Leon Gatys, Matthias Betge, Aaron Hertzmann, and Eli Schetman.
 
 This implementation is inspired by the implementations of:
-* Anish Athalye [Neural Style in Tensorflow](https://github.com/anishathalye/neural-style),
-* Justin Johnson [Neural Style in Torch](https://github.com/jcjohnson/neural-style), and
-* ProGamerGov [Neural Style in PyTorch](https://github.com/ProGamerGov/neural-style-pt)
+* Anish Athalye: [Neural Style in Tensorflow](https://github.com/anishathalye/neural-style),
+* Justin Johnson: [Neural Style in Torch](https://github.com/jcjohnson/neural-style), and
+* ProGamerGov: [Neural Style in PyTorch](https://github.com/ProGamerGov/neural-style-pt)
 
 The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/pytorch-vgg) were used for this implementation, instead of the pretrained VGG19's in PyTorch's model zoo.
 
-## Examples
+## Examples: Style Transfer
 ### Catriona Gray and Woman I by Willem de Kooning
 ![Catriona](https://i.imgur.com/Cx7WEZo.jpg)
 
@@ -24,6 +24,10 @@ The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/py
 
 ### [Some Old Man](https://www.google.com/search?q=philippine+idiot&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi0p_PDqK3fAhVIabwKHRWeCPQQ_AUIDigB&biw=2560&bih=1311) + Increasing Style Weights of Starry Night
 ![Philippine Idiot](https://i.imgur.com/bK8bnCN.jpg)
+
+## Examples: Style Transfer while Preserving the original color
+### Janelle Monae and Starry Night by Vincent van Gogh + Preserve Original Color
+![Janelle Monae Preserve](https://i.imgur.com/asrUS0A.jpg) 
 
 ## Requirements
 `NOTE`: For `Google-Colab users` - All data files and dependencies can be installed by running the uppermost cell of the notebook! See `Usage`!
@@ -75,9 +79,11 @@ The included notebook file is a `Google-Colab-ready` notebook! Uncomment and run
 ## Options
 ### Image
 * `MAX_IMAGE_SIZE`: sets the max dimension of height or weight. Bigger GPU memory is needed to run larger images. Default is `512`px.
-* `INIT_IMAGE`: Sets the initial image file to either `'random'` or `'content'`. Default is `random` which initializes a noise image. Content copies a resized content image, giving free optimization of content loss!
+* `INIT_IMAGE`: sets the initial image file to either `'random'` or `'content'`. Default is `random` which initializes a noise image. Content copies a resized content image, giving free optimization of content loss!
 * `CONTENT_PATH`: path of the content image
 * `STYLE_PATH`: path of the style image
+* `PRESERVE_COLOR`: determines whether to preserve the color of the content image. `True` preserves the color of the content image. Default value is `False` 
+* `PIXEL_CLIP`: determines whether to clip the resulting image. `True` clips the pixel values to [0, 255]. Default value is `True` 
 
 ### Optimizer
 * `OPTIMIZER`: sets the optimizer to either 'adam' or 'lbfgs'. Default optimizer is `Adam` with learning rate of 10. L-BFGS was used in the original (matlab) implementation of the reference paper.
