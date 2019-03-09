@@ -44,7 +44,7 @@ The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/py
 * [Copy](https://docs.python.org/3/library/copy.html)
 
 ## Usage
-If you don't have a GPU, you may want to run the notebook in [Google Colab](https://colab.research.google.com)! Colab is a cloud-GPU service with an interface similar to Jupyter notebook. A separate instruction is included to get started with Colab.
+If you don't have a GPU, you may want to run the notebook in [Google Colab](https://colab.research.google.com/github/rrmina/neural-style-pytorch/blob/master/neural_style_preserve_color.ipynb)! Colab is a cloud-GPU service with an interface similar to Jupyter notebook. A separate instruction is included to get started with Colab.
 
 ### Local GPU
 After installing the dependencies, run `models/download_model.sh` script to download the pretrained VGG19 weights. 
@@ -71,10 +71,6 @@ The included notebook file is a `Google-Colab-ready` notebook! Uncomment and run
 !mkdir images
 !cp neural-style-pytorch-master/images/1-content.png images
 !cp neural-style-pytorch-master/images/1-style.jpg images
-
-# Install PyTorch and torchvision
-!pip install pytorch
-!pip install torchvision
 ```
 ## Options
 ### Image
