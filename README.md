@@ -33,7 +33,7 @@ The [original caffe pretrained weights of VGG19](https://github.com/jcjohnson/py
 `NOTE`: For `Google-Colab users` - All data files and dependencies can be installed by running the uppermost cell of the notebook! See `Usage`!
 
 ### Data Files
-* [Pre-trained VGG19 network weights](https://s3-us-west-2.amazonaws.com/jcjohns-models/vgg16-00b39a1b.pth) - put it in `models/` directory
+* [Pre-trained VGG19 network weights](https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth) - put it in `models/` directory
 * [torchvision](https://pytorch.org/) - `torchvision.models` contains the VGG19 model skeleton
 
 ### Dependecies
@@ -61,7 +61,7 @@ jupyter notebook
 The included notebook file is a `Google-Colab-ready` notebook! Uncomment and run the first cell to download the demo pictures, and VGG19 weights. It will also install the dependencies (i.e. PyTorch and torchvision).
 ```
 # Download VGG19 Model
-!wget -c https://s3-us-west-2.amazonaws.com/jcjohns-models/vgg19-d01eb7cb.pth
+!wget -c https://web.eecs.umich.edu/~justincj/models/vgg19-d01eb7cb.pth
 !mkdir models
 !cp vgg19-d01eb7cb.pth models/
 
